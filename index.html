@@ -32,7 +32,7 @@
             overflow: hidden;
         }
 
-        /* ===== НОВАЯ СВЕТЛАЯ ШАПКА ===== */
+        /* ===== СВЕТЛАЯ ШАПКА ===== */
         header {
             background: #ffffff;
             color: #0f172a;
@@ -105,9 +105,8 @@
             stroke-width: 2;
             flex-shrink: 0;
         }
-        /* ===== КОНЕЦ НОВОЙ ШАПКИ ===== */
+        /* ===== КОНЕЦ ШАПКИ ===== */
 
-        /* Остальные стили без изменений */
         main {
             padding: 2.5rem;
         }
@@ -137,20 +136,8 @@
             margin-bottom: 1.5rem;
         }
 
-        .skill-tag {
-            background: #f1f5f9;
-            color: #0f172a;
-            padding: 0.35rem 1rem;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border: 1px solid #e2e8f0;
-        }
-
-        .skill-tag.primary {
-            background: #0f172a;
-            color: white;
-            border: none;
+        .skill-tags img {
+            height: 28px;
         }
 
         .job {
@@ -184,6 +171,12 @@
             border-radius: 30px;
         }
 
+        .job-date.current {
+            background: #2563eb;
+            color: white;
+            font-weight: 500;
+        }
+
         .job-description {
             color: #334155;
             font-size: 0.95rem;
@@ -211,62 +204,14 @@
             font-weight: bold;
         }
 
-        .badge-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .badge {
-            background: #f1f5f9;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: #1e293b;
-            border: 1px solid #e2e8f0;
-        }
-
         .about-text {
             color: #334155;
             margin-bottom: 1.5rem;
             font-size: 0.95rem;
         }
 
-        .about-text li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-            color: #475569;
-            font-size: 0.95rem;
-            list-style: none;
-        }
-
-        .about-text li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: #2563eb;
-            font-weight: bold;
-        }
-
-        .portfolio-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: #0f172a;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 1rem;
-            transition: background 0.2s;
-        }
-
-        .portfolio-link:hover {
-            background: #1e293b;
+        .about-text p {
+            margin-bottom: 0.75rem;
         }
 
         .download-link {
@@ -301,18 +246,12 @@
             .header-row { flex-direction: column; align-items: flex-start; }
             .avatar { width: 100px; height: 100px; }
         }
-
-        .job-date.current {
-            background: #2563eb;
-            color: white;
-            font-weight: 500;
-        }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <!-- ===== НОВАЯ ШАПКА (СВЕТЛАЯ) ===== -->
+        <!-- ===== ШАПКА ===== -->
         <header>
             <div class="header-row">
                 <img src="https://github.com/remarx7.png" alt="Александр Керланов" class="avatar">
@@ -341,41 +280,30 @@
                 </a>
             </div>
         </header>
-        <!-- ===== КОНЕЦ НОВОЙ ШАПКИ ===== -->
+        <!-- ===== КОНЕЦ ШАПКИ ===== -->
 
         <main>
             <div class="grid-2">
                 <div>
                     <div class="section-title">Обо мне</div>
                     <div class="about-text">
-                        <p>Меня зовут Александр, мне 28 лет. 1.5 года в QA. Обладаю большим опытом в тестировании frontend и backend приложений mob и web. Активно развиваю автоматизацию на Python.</p> 
+                        <p>Меня зовут Александр, мне 28 лет. 1.5 года в QA. Обладаю большим опытом в тестировании frontend и backend приложений mob и web. Активно развиваю автоматизацию на Python.</p>
                         <p>До перехода в тестирование я более пяти лет проводил многомиллионные сделки по недвижимости, вчитываясь в каждый пункт договора. Это выработало во мне глубокую внимательность к деталям и чувство ответственности за результат.</p>
                     </div>
 
                     <div class="section-title">Ключевые навыки</div>
                     <div class="skill-tags">
-                        <!-- API / Тестирование -->
                         <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-                        
-                        <!-- Базы данных -->
                         <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-                        
-                        <!-- Мобильное тестирование -->
                         <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" />
                         <img src="https://img.shields.io/badge/Fiddler-4B8BBE?style=for-the-badge&logo=charles&logoColor=white" />
-                        
-                        <!-- Автоматизация -->
                         <img src="https://img.shields.io/badge/Python%20%2F%20Selenium%20%2F%20pytest-3776AB?style=for-the-badge&logo=python&logoColor=white" />
                         <img src="https://img.shields.io/badge/Allure-0077B5?style=for-the-badge&logo=allure&logoColor=white" />
                         <img src="https://img.shields.io/badge/Appium-EE376D?style=for-the-badge&logo=appium&logoColor=white" />
-                        
-                        <!-- Аналитика / Трекинг -->
                         <img src="https://img.shields.io/badge/AppsFlyer-0077B5?style=for-the-badge&logo=appsflyer&logoColor=white" />
                         <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
                         <img src="https://img.shields.io/badge/Appmetrica-000000?style=for-the-badge&logo=yandex&logoColor=white" />
                         <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" />
-                        
-                        <!-- Управление / CI -->
                         <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
                         <img src="https://img.shields.io/badge/TestOps-6C47FF?style=for-the-badge&logo=testit&logoColor=white" />
                         <img src="https://img.shields.io/badge/GitLab%20CI-FCA121?style=for-the-badge&logo=gitlab&logoColor=white" />
@@ -401,8 +329,8 @@
                                 <li>Анализ результатов запуска автотестов.</li>
                             </ul>
                         </div>
-                    </div>                    
-                    
+                    </div>
+
                     <div class="job">
                         <div class="job-header">
                             <span class="job-title">Manual QA Engineer</span>
@@ -412,11 +340,11 @@
                         <div class="job-description">
                             <ul class="achievement-list">
                                 <li>Функциональное, регрессионное, смоук и санитарное тестирование CRM и интеграций.</li>
-                                <li>Тестирование REST API (Postman/Swagger) и проверка данных в БД (PostgreSQL) после запросов.</li>
+                                <li>Тестирование REST API (Postman/Swagger).</li>
                                 <li>Участие в уточнении требований и тестировании на ранних этапах.</li>
                                 <li>Разработка и поддержка тестовой документации (тест-кейсы, чек-листы) в TestRail.</li>
-                                <li>Кроссбраузерное, кроссплатформенное и мобильное тестирование (BrowserStack).</li>
-                                <li>Выявление, документирование и отслеживание дефектов в Jira, мониторинг логов (Sentry).</li>
+                                <li>Веб и мобильное тестирование (BrowserStack) приложения перевозок.</li>
+                                <li>Выявление, документирование и отслеживание дефектов в Jira.</li>
                             </ul>
                         </div>
                     </div>
@@ -430,17 +358,17 @@
 
             <hr>
 
-        <div style="display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 1rem;">
-            <a href="docs/resume.pdf" download="Александр_Керланов_QA_Engineer.pdf" class="download-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                    <polyline points="7 10 12 15 17 10"/>
-                    <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg> 
-                Скачать резюме (PDF)
-            </a>
-        </div>
-            <div style="color: #64748b; font-size: 0.9rem; text-align: right;">
+            <div style="display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <a href="docs/resume.pdf" download="Александр_Керланов_QA_Engineer.pdf" class="download-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Скачать резюме (PDF)
+                </a>
+            </div>
+            <div style="color: #64748b; font-size: 0.9rem; text-align: right; margin-top: 0.5rem;">
                 г. Ростов-на-Дону 2026 г.
             </div>
         </main>
